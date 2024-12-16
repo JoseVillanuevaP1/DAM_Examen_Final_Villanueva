@@ -70,9 +70,43 @@ public class NotaFragment extends Fragment {
                 recyclerView.setLayoutManager(new StaggeredGridLayoutManager( mColumnCount, StaggeredGridLayoutManager.VERTICAL));
             }
             notaList = new ArrayList<>();
-            notaList.add(new Nota("UC4","Estudiar para la evaluación de la UC4", true, android.R.color.holo_blue_light));
-            notaList.add(new Nota("Recordar", "He aparcado el coche en la calle República Argentina",false, android.R.color.holo_green_light));
-            notaList.add(new Nota("cumpleaños (fiesta)","no olvidar las velas", true, android.R.color.holo_orange_light));
+            List<Nota> notaList = new ArrayList<>();
+
+            // Agregar las notas
+            notaList.add(new Nota("Trabajo Académico",
+                    "Las notas del trabajo académico serán revisadas e ingresadas el día 23 de Diciembre.",
+                    true,
+                    android.R.color.holo_blue_light));
+
+            notaList.add(new Nota("Examen Final",
+                    "Estudiar, practicar y presentarse al examen Final el día 16 de Diciembre.",
+                    true,
+                    android.R.color.holo_blue_light));
+
+            notaList.add(new Nota("Resultado Examen Final",
+                    "La Revisión del examen final se revisará durante la sesión de clases y el resultado será publicado en los próximos días, específicamente: 23/12/24.",
+                    true,
+                    android.R.color.holo_blue_light));
+
+            notaList.add(new Nota("Examen Sustitutorio",
+                    "Examen Sustitutorio planificado para el día 23 de diciembre del 2024. Asistir puntualmente a todos los que se van a presentar.",
+                    true,
+                    android.R.color.holo_blue_light));
+
+            notaList.add(new Nota("Fiestas Navideñas",
+                    "La Navidad es una época del año llena de emociones, de reencuentros, y de momentos especiales para compartir con las personas que más queremos. Es un tiempo para expresar nuestros sentimientos y agradecer por lo que hemos vivido durante el año. Y nada mejor que unas palabras llenas de cariño para transmitir ese amor y gratitud a nuestros seres queridos.",
+                    false,
+                    android.R.color.holo_green_light));
+
+            notaList.add(new Nota("Despedida de Ciclo",
+                    "Quiero dejar con ustedes este mensaje y espero que lo recuerden toda su vida: “La mayor necesidad del mundo es la de hombres que no se vendan ni se compren; hombres que sean sinceros y honrados en lo más íntimo de sus almas; hombres que no teman dar al pecado el nombre que le corresponde; hombres cuya conciencia sea tan leal al deber como la brújula al polo; hombres que se mantengan de parte de la justicia aunque se desplomen los cielos”. Aprecio mucho su amistad, su participación en las sesiones de clases, cada ciclo es una nueva experiencia, deseo que sigan estudiando. Muchas Felicidades. Nos vemos el 2025 - I.",
+                    true,
+                    android.R.color.holo_orange_light));
+
+            notaList.add(new Nota("Estudia y supérate",
+                    "Todas las distintas capacidades que el hombre posee de la mente, del alma y del cuerpo le fueron dadas por Dios para que las dedique a alcanzar el más alto grado de excelencia posible. Toda facultad y todo atributo con que el Creador nos haya dotado deben emplearse para su gloria y para el ennoblecimiento de nuestros semejantes. Y en este empleo se halla la ocupación más pura, más noble y más feliz.",
+                    false,
+                    android.R.color.holo_green_light));
             adapterNotas = new MyNotaRecyclerViewAdapter(notaList, mListener);
             recyclerView.setAdapter(adapterNotas);
         }
