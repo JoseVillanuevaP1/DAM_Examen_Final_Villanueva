@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DAM_Examen_Final_Villanueva</string>
+    <string name="txt_username" />
+    <string name="txt_password" />
+    <string name="btnLogin">Entrar</string>
+    <string name="lbl_forgot">¿Olvidate tu contraseña?</string>
+    <string name="lbl_o">O</string>
+    <string name="lbl_face">Ingresa con Facebook</string>
+    <string name="lbl_cuenta">No tienes una cuenta? Registrate</string>
+</resources>
